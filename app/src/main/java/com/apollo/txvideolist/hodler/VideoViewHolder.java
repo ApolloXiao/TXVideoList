@@ -14,7 +14,7 @@ public class VideoViewHolder extends BaseViewHolder<VideoItem> implements ListIt
 
     VideoViewHolder(View itemView) {
         super(itemView);
-        txListVideoView = itemView.findViewById(R.id.videoView);
+        txListVideoView = (TXListVideoView) itemView.findViewById(R.id.videoView);
     }
 
     @Override

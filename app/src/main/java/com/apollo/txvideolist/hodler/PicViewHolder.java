@@ -15,8 +15,8 @@ public class PicViewHolder extends BaseViewHolder<PicItem> {
 
     public PicViewHolder(View itemView) {
         super(itemView);
-        mImageView = itemView.findViewById(R.id.pic_image_view);
-        mTextView = itemView.findViewById(R.id.pic_text_view);
+        mImageView = (ImageView) itemView.findViewById(R.id.pic_image_view);
+        mTextView = (TextView) itemView.findViewById(R.id.pic_text_view);
     }
 
     @Override

@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         MainActivityPermissionsDispatcher.startPermissionWithPermissionCheck(this);
-        mRecyclerView = findViewById(R.id.recyclerView);
+        mRecyclerView = (RecyclerView) findViewById(R.id.recyclerView);
 
         final MyAdapter adapter = new MyAdapter(mRecyclerView);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);

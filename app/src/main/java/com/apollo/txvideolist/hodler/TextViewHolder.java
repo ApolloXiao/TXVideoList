@@ -11,7 +11,7 @@ public class TextViewHolder extends BaseViewHolder<TextItem> {
 
     public TextViewHolder(View itemView) {
         super(itemView);
-        mTextView = itemView.findViewById(R.id.text_view);
+        mTextView = (TextView) itemView.findViewById(R.id.text_view);
     }
 
     @Override
